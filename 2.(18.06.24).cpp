@@ -18,7 +18,7 @@ int main() {
 		File.getline(Characters, 30);
 		//for (char i : Characters) {
 		for (int i = 0; Characters[i] != '\0'; i++) {
-			if (Characters[i] != ' ' && isdigit(Characters[i])) { Serial += Characters[i]; }
+			if (isdigit(Characters[i])) { Serial += Characters[i]; }
 			if (Characters[i] == ' ') {
 				cout << Serial << endl;
 				Total++;
@@ -28,9 +28,6 @@ int main() {
 	}
 	File.close();
 	cout << "\nВсего чисел: " << Total;
-
-
-
 
 }
 	
